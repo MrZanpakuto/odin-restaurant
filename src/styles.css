@@ -151,7 +151,7 @@ li:hover {
 }
 
 .card:hover {
-    background-color: bisque;
+    background-color: rgb(117, 89, 56);
     cursor: pointer;
 }
 
@@ -159,11 +159,13 @@ li:hover {
     text-align: center;
     margin: 0;
     line-height: 1.2;
+    color: #fff;
 }
 
 .card > h2 {
     margin: 0;
     padding: 1rem;
+    color: #fff;
 }
 
 .card > img {
@@ -250,5 +252,4 @@ li:hover {
         height: 275px;
         width: 275px;
     }
-
 }
