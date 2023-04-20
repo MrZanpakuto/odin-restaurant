@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contact\": () => (/* binding */ contact)\n/* harmony export */ });\nfunction contact() {\n    const mainContainer = document.createElement('div');\n    const main = document.createElement('main');\n    const div = document.createElement('div');\n    const p1 = document.createElement('p');\n    const p2 = document.createElement('p');\n    const img = document.createElement('img');\n\n    main.id = 'main-contact';\n    div.className = 'contact';\n    mainContainer.id = 'main-container';\n\n    mainContainer.appendChild(main);\n    main.appendChild(div);\n    div.appendChild(p1);\n    div.appendChild(p2);\n    div.appendChild(img);\n\n    p1.innerText = '📞  (281) 330-8004';\n    p2.innerText = '🏠 Mike Jones Drive, Jonesville, MI';\n    img.src = '../src/images/contact.png';\n    img.alt = 'Sweet Treats Bakery';\n\n    return mainContainer;\n}\n\n//# sourceURL=webpack://package/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contact\": () => (/* binding */ contact)\n/* harmony export */ });\n/* harmony import */ var _images_contact_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/contact.png */ \"./src/images/contact.png\");\n\n\nfunction contact() {\n    const mainContainer = document.createElement('div');\n    const main = document.createElement('main');\n    const div = document.createElement('div');\n    const p1 = document.createElement('p');\n    const p2 = document.createElement('p');\n    const img = document.createElement('img');\n\n    main.id = 'main-contact';\n    div.className = 'contact';\n    mainContainer.id = 'main-container';\n    mainContainer.className = 'home-contact-bkg';\n\n    mainContainer.appendChild(main);\n    main.appendChild(div);\n    div.appendChild(p1);\n    div.appendChild(p2);\n    div.appendChild(img);\n\n    p1.innerText = '📞  (281) 330-8004';\n    p2.innerText = '🏠 Mike Jones Drive, Jonesville, MI';\n    img.src = _images_contact_png__WEBPACK_IMPORTED_MODULE_0__;\n    img.alt = 'Sweet Treats Bakery';\n\n    return mainContainer;\n}\n\n//# sourceURL=webpack://package/./src/contact.js?");
 
 /***/ }),
 
@@ -56,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"home\": () => (/* binding */ home)\n/* harmony export */ });\nfunction home() {\n    const mainContainer = document.createElement('div');\n    const main = document.createElement('main');\n    const container = document.createElement('div');\n    const img = document.createElement('img');\n    const p1 = document.createElement('p');\n    const p2 = document.createElement('p');\n    const p3 = document.createElement('p');\n\n    mainContainer.appendChild(main);\n    main.appendChild(container);\n    container.appendChild(p1);\n    container.appendChild(p2);\n    container.appendChild(img);\n    container.appendChild(p3);\n\n    mainContainer.id = 'main-container';\n    main.className ='main-menu';\n    p3.className = 'order';\n    container.className = 'home';\n    img.src = '../src/images/baker.png';\n    img.alt = 'Baker';\n\n    p1.innerText = 'Sweet Treats';\n    p2.innerText = 'Come get a piece of heaven!';\n    p3.innerText = 'Order Online or in-store!';\n\n    return mainContainer;\n}\n\n//# sourceURL=webpack://package/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"home\": () => (/* binding */ home)\n/* harmony export */ });\n/* harmony import */ var _images_baker_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/baker.png */ \"./src/images/baker.png\");\n\n\nfunction home() {\n    const mainContainer = document.createElement('div');\n    const main = document.createElement('main');\n    const container = document.createElement('div');\n    const img = document.createElement('img');\n    const p1 = document.createElement('p');\n    const p2 = document.createElement('p');\n    const p3 = document.createElement('p');\n\n    mainContainer.appendChild(main);\n    main.appendChild(container);\n    container.appendChild(p1);\n    container.appendChild(p2);\n    container.appendChild(img);\n    container.appendChild(p3);\n\n    mainContainer.id = 'main-container';\n    mainContainer.className = 'home-contact-bkg';\n    main.className ='main-menu';\n    p3.className = 'order';\n    container.className = 'home';\n    img.src = _images_baker_png__WEBPACK_IMPORTED_MODULE_0__;\n    img.alt = 'Baker';\n\n    p1.innerText = 'Sweet Treats';\n    p2.innerText = 'Come get a piece of heaven!';\n    p3.innerText = 'Order Online or in-store!';\n\n    return mainContainer;\n}\n\n//# sourceURL=webpack://package/./src/home.js?");
 
 /***/ }),
 
@@ -76,7 +76,37 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hea
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menu\": () => (/* binding */ menu)\n/* harmony export */ });\nfunction menu() {\n    const mainContainer = document.createElement('div');\n    const main = document.createElement('main');\n    const container = document.createElement('div');\n\n    // create 6 div elements\n    for (let i= 0; i < 6; i++) {\n        const card = document.createElement('div');\n        const p = document.createElement('p');\n        const menuItemTitle = document.createElement('h2');\n        const img = document.createElement('img');\n        container.appendChild(card);\n        card.appendChild(img);\n        card.appendChild(menuItemTitle);\n        card.appendChild(p);\n\n        card.className = 'card';\n\n        if(i===0) {\n            menuItemTitle.innerText = 'Choco Taco';\n            p.innerText = 'Chocolate Syrup, Vanilla Ice Cream, Graham Cracker, Caramel';\n            img.src = '../src/images/taco.png';\n        } else if(i===1) {\n            menuItemTitle.innerText = 'Apple Towtow';\n            p.innerText = 'Apple, Sugar, Cinnamon, Salt, Flour';\n            img.src = '../src/images/pie.png';\n        } else if(i===2) {\n            menuItemTitle.innerText = 'Lemon Drop';\n            p.innerText = 'Lemon, Sugar, Flour, Cream, Salt';\n            img.src = '../src/images/tart.png';\n        } else if(i===3) {\n            menuItemTitle.innerText = 'Shortcake';\n            p.innerText = 'Strawberry, Sugar, Flour, Cream, Salt';\n            img.src = '../src/images/piece-of-cake.png';\n        } else if(i===4) {\n            menuItemTitle.innerText = 'Sundae Delight';\n            p.innerText = 'Vanilla Ice Cream, Chocolate Fudge, Sprinkles';\n            img.src = '../src/images/sundae.png';\n        } else {\n            menuItemTitle.innerText = 'Banana Dream';\n            p.innerText = 'Banana, Chocolate, Custard, Cream';\n            img.src = '../src/images/banana-split.png';\n        }\n    }\n\n    mainContainer.appendChild(main);\n    main.appendChild(container);\n    \n    // assign class names & id\n    mainContainer.id = 'main-container';\n    main.className = 'main-menu'; \n    container.className = 'menu';\n\n    return mainContainer;\n}\n\n//# sourceURL=webpack://package/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menu\": () => (/* binding */ menu)\n/* harmony export */ });\n/* harmony import */ var _images_taco_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/taco.png */ \"./src/images/taco.png\");\n/* harmony import */ var _images_pie_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/pie.png */ \"./src/images/pie.png\");\n/* harmony import */ var _images_tart_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/tart.png */ \"./src/images/tart.png\");\n/* harmony import */ var _images_piece_of_cake_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/piece-of-cake.png */ \"./src/images/piece-of-cake.png\");\n/* harmony import */ var _images_sundae_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/sundae.png */ \"./src/images/sundae.png\");\n/* harmony import */ var _images_banana_split_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/banana-split.png */ \"./src/images/banana-split.png\");\n\n\n\n\n\n\n\nfunction menu() {\n    const mainContainer = document.createElement('div');\n    const main = document.createElement('main');\n    const container = document.createElement('div');\n\n    // create 6 div elements\n    for (let i= 0; i < 6; i++) {\n        const card = document.createElement('div');\n        const p = document.createElement('p');\n        const menuItemTitle = document.createElement('h2');\n        const img = document.createElement('img');\n        container.appendChild(card);\n        card.appendChild(img);\n        card.appendChild(menuItemTitle);\n        card.appendChild(p);\n\n        card.className = 'card';\n\n        if(i===0) {\n            menuItemTitle.innerText = 'Choco Taco';\n            p.innerText = 'Chocolate Syrup, Vanilla Ice Cream, Graham Cracker, Caramel';\n            img.src = _images_taco_png__WEBPACK_IMPORTED_MODULE_0__;\n        } else if(i===1) {\n            menuItemTitle.innerText = 'Apple Towtow';\n            p.innerText = 'Apple, Sugar, Cinnamon, Salt, Flour';\n            img.src = _images_pie_png__WEBPACK_IMPORTED_MODULE_1__;\n        } else if(i===2) {\n            menuItemTitle.innerText = 'Lemon Drop';\n            p.innerText = 'Lemon, Sugar, Flour, Cream, Salt';\n            img.src = _images_tart_png__WEBPACK_IMPORTED_MODULE_2__;\n        } else if(i===3) {\n            menuItemTitle.innerText = 'Shortcake';\n            p.innerText = 'Strawberry, Sugar, Flour, Cream, Salt';\n            img.src = _images_piece_of_cake_png__WEBPACK_IMPORTED_MODULE_3__;\n        } else if(i===4) {\n            menuItemTitle.innerText = 'Sundae Delight';\n            p.innerText = 'Vanilla Ice Cream, Chocolate Fudge, Sprinkles';\n            img.src = _images_sundae_png__WEBPACK_IMPORTED_MODULE_4__;\n        } else {\n            menuItemTitle.innerText = 'Banana Dream';\n            p.innerText = 'Banana, Chocolate, Custard, Cream';\n            img.src = _images_banana_split_png__WEBPACK_IMPORTED_MODULE_5__;\n        }\n    }\n\n    mainContainer.appendChild(main);\n    main.appendChild(container);\n    \n    // assign class names & id\n    mainContainer.id = 'main-container';\n    main.className = 'main-menu'; \n    container.className = 'menu';\n\n    return mainContainer;\n}\n\n//# sourceURL=webpack://package/./src/menu.js?");
+
+/***/ }),
+
+/***/ "./src/images/baker.png":
+/*!******************************!*\
+  !*** ./src/images/baker.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"a58f7d944c76b3cab8b6.png\";\n\n//# sourceURL=webpack://package/./src/images/baker.png?");
+
+/***/ }),
+
+/***/ "./src/images/banana-split.png":
+/*!*************************************!*\
+  !*** ./src/images/banana-split.png ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"90632fc7ed3644b79cf0.png\";\n\n//# sourceURL=webpack://package/./src/images/banana-split.png?");
+
+/***/ }),
+
+/***/ "./src/images/contact.png":
+/*!********************************!*\
+  !*** ./src/images/contact.png ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"4931b3b73a2ee255edb3.png\";\n\n//# sourceURL=webpack://package/./src/images/contact.png?");
 
 /***/ }),
 
@@ -87,6 +117,56 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"0e21c734dff481df9553.png\";\n\n//# sourceURL=webpack://package/./src/images/pancake.png?");
+
+/***/ }),
+
+/***/ "./src/images/pie.png":
+/*!****************************!*\
+  !*** ./src/images/pie.png ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"572dfe2c68e5df48b9c9.png\";\n\n//# sourceURL=webpack://package/./src/images/pie.png?");
+
+/***/ }),
+
+/***/ "./src/images/piece-of-cake.png":
+/*!**************************************!*\
+  !*** ./src/images/piece-of-cake.png ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f792e998adb32fafd7d8.png\";\n\n//# sourceURL=webpack://package/./src/images/piece-of-cake.png?");
+
+/***/ }),
+
+/***/ "./src/images/sundae.png":
+/*!*******************************!*\
+  !*** ./src/images/sundae.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"b279e0a26e146fbe79b1.png\";\n\n//# sourceURL=webpack://package/./src/images/sundae.png?");
+
+/***/ }),
+
+/***/ "./src/images/taco.png":
+/*!*****************************!*\
+  !*** ./src/images/taco.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"48f1acb797229536062d.png\";\n\n//# sourceURL=webpack://package/./src/images/taco.png?");
+
+/***/ }),
+
+/***/ "./src/images/tart.png":
+/*!*****************************!*\
+  !*** ./src/images/tart.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"a8012a9fc3473011dce8.png\";\n\n//# sourceURL=webpack://package/./src/images/tart.png?");
 
 /***/ })
 
