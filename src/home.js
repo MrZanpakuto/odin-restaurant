@@ -1,3 +1,5 @@
+import bakerImage from './images/baker.png';
+
 export function home() {
     const mainContainer = document.createElement('div');
     const main = document.createElement('main');
@@ -19,7 +21,7 @@ export function home() {
     main.className ='main-menu';
     p3.className = 'order';
     container.className = 'home';
-    img.src = '../src/images/baker.png';
+    img.src = bakerImage;
     img.alt = 'Baker';
 
     p1.innerText = 'Sweet Treats';

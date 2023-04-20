@@ -1,3 +1,10 @@
+import tacoImage from './images/taco.png';
+import pieImage from './images/pie.png';
+import tartImage from './images/tart.png';
+import cakeImage from './images/piece-of-cake.png';
+import sundaeImage from './images/sundae.png';
+import splitImage from  './images/banana-split.png';
+
 export function menu() {
     const mainContainer = document.createElement('div');
     const main = document.createElement('main');
@@ -19,27 +26,27 @@ export function menu() {
         if(i===0) {
             menuItemTitle.innerText = 'Choco Taco';
             p.innerText = 'Chocolate Syrup, Vanilla Ice Cream, Graham Cracker, Caramel';
-            img.src = '../src/images/taco.png';
+            img.src = tacoImage;
         } else if(i===1) {
             menuItemTitle.innerText = 'Apple Towtow';
             p.innerText = 'Apple, Sugar, Cinnamon, Salt, Flour';
-            img.src = '../src/images/pie.png';
+            img.src = pieImage;
         } else if(i===2) {
             menuItemTitle.innerText = 'Lemon Drop';
             p.innerText = 'Lemon, Sugar, Flour, Cream, Salt';
-            img.src = '../src/images/tart.png';
+            img.src = tartImage;
         } else if(i===3) {
             menuItemTitle.innerText = 'Shortcake';
             p.innerText = 'Strawberry, Sugar, Flour, Cream, Salt';
-            img.src = '../src/images/piece-of-cake.png';
+            img.src = cakeImage;
         } else if(i===4) {
             menuItemTitle.innerText = 'Sundae Delight';
             p.innerText = 'Vanilla Ice Cream, Chocolate Fudge, Sprinkles';
-            img.src = '../src/images/sundae.png';
+            img.src = sundaeImage;
         } else {
             menuItemTitle.innerText = 'Banana Dream';
             p.innerText = 'Banana, Chocolate, Custard, Cream';
-            img.src = '../src/images/banana-split.png';
+            img.src = splitImage;
         }
     }
 

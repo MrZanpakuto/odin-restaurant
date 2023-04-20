@@ -1,3 +1,5 @@
+import contactImage from './images/contact.png';
+
 export function contact() {
     const mainContainer = document.createElement('div');
     const main = document.createElement('main');
@@ -19,7 +21,7 @@ export function contact() {
 
     p1.innerText = '📞  (281) 330-8004';
     p2.innerText = '🏠 Mike Jones Drive, Jonesville, MI';
-    img.src = '../src/images/contact.png';
+    img.src = contactImage;
     img.alt = 'Sweet Treats Bakery';
 
     return mainContainer;
